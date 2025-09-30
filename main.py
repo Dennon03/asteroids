@@ -34,7 +34,7 @@ def main():
                 collided = shot.check_for_collisions(asteroid)
                 if collided:
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
                     break
         for sprite in asteroids:
             if sprite.check_for_collisions(player):
